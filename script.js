@@ -58,7 +58,7 @@ spinButton.addEventListener('click', () => {
         const result = Math.floor(((randomDegree % 360) + 30) / 60) % 6 + 1;
         results.push(result);
         wheel.style.transition = 'transform 4s ease-out';
-       wheel.style.transform = rotate(${randomDegree}deg);
+      wheel.style.transform = `rotate(${randomDegree}deg)`
         if (result === betNumber) hits++;
     });
 
